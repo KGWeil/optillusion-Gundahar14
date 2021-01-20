@@ -21,11 +21,11 @@ public class Figuren extends PApplet
     }        
 
     public void zeichneBildC() {
+        ellipse(500, 125, 60, 60);
         rect(475, 275, 50, 50);
-        rect(480, 5, 40,40);
-        rect(485, 10, 30,30);
-        rect(490, 15, 20,20);
-        ellipse(495, 15, 50, 50);
+        rect(480, 105, 40,40);
+        rect(485, 110, 30,30);
+        rect(490, 115, 20,20);
         ellipse(500, 300, 40,40);
         ellipse(500,300, 30, 30);
         ellipse(500,300, 20, 20);
