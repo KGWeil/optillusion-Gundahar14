@@ -21,7 +21,8 @@ public class Figuren extends PApplet
     }        
 
     public void zeichneBildC() {
-        rect(250, 250, 50, 50);
+
+         rect(250, 250, 50, 50);
         ellipse(500, 300,40, 40);
         ellipse(500, 300,30, 30);
         ellipse(500, 300,20, 20);
@@ -34,6 +35,16 @@ public class Figuren extends PApplet
         // ***** hier kommen deine Anweisungen hin ************
 
         // ***** Ende der eigenen Anweisungen **********
+
+        ellipse(500, 125, 60, 60);
+        rect(475, 275, 50, 50);
+        rect(480, 105, 40,40);
+        rect(485, 110, 30,30);
+        rect(490, 115, 20,20);
+        ellipse(500, 300, 40,40);
+        ellipse(500,300, 30, 30);
+        ellipse(500,300, 20, 20);
+
     }
 
     //***** Zusatzaufgabe bzw. Hausaufgabe *************
