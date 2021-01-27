@@ -17,13 +17,19 @@ public class Figuren extends PApplet
     @Override
     public void settings()
     {
-        size(500, 350); // Festlegen der Fenstergröße
+        size(1500, 1500); // Festlegen der Fenstergröße
     }        
 
     public void zeichneBildC() {
-        // Zeichne dir zunächst eine Skizze auf ein Blatt Papier und überlege dir, welche
-        // Werte du den Methoden rect(x,y,b,h) und ellipse(x,y,b,h) übergeben musst, 
-        // dass Bild C gezeichnet wird
+        rect(250, 250, 50, 50);
+        ellipse(500, 300,40, 40);
+        ellipse(500, 300,30, 30);
+        ellipse(500, 300,20, 20);
+         rect(250, 250, 50, 50);
+        ellipse(500, 0,40, 40);
+        ellipse(500, 0,30, 30);
+        ellipse(500, 0,20, 20);
+
 
         // ***** hier kommen deine Anweisungen hin ************
 
