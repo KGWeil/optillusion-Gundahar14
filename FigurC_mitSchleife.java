@@ -17,15 +17,14 @@ public class FigurC_mitSchleife extends PApplet
     @Override
     public void settings()
     {
-        size(500,350); // Festlegen der Fenstergröße
+        size(1000, 1000); // Festlegen der Fenstergröße
     }        
 
     public void zeichneBildC() {
-        // ***** hier kommen deine Anweisungen hin ************
-   
-        // ***** Ende der eigenen Anweisungen **********
+        for(int i= 1; i < 10; i++){
+            ellipse (500, 500, -30*i+300, -30*i+300);
+        }
     }
-
     /**
      * Die setup() Methode wird einmal aufgerufen, wenn das Programm startet.
      * Hier werden Einstellungen wie die Hintergrundfarbe vorgenommen
@@ -36,7 +35,6 @@ public class FigurC_mitSchleife extends PApplet
     {
         zeichneBildC(); // Aufruf deiner Methode
     }
-
 
     /**
      * Mit der main()-Methode wird das Programm gestartet.
