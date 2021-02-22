@@ -3,14 +3,16 @@ import processing.core.PApplet;
 import processing.core.PFont;
 
 /**
- * Klasse Kaffehaus.
+ * Klasse Kaffeehaus.
  * Beschreibung: 
  *
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Kaffehaus extends PApplet
-{       
+public class Kaffeehaus extends PApplet
+{     
+    int s=40;
+   
     /**
      * settings() Methode 
      * Fenstergröße size(int width, int height) und smooth(int level) muss hier eingestellt werden.
@@ -19,7 +21,6 @@ public class Kaffehaus extends PApplet
     public void settings()
     {
         size(640,400);
-        background(255,255,255) ;
     }        
 
     /**
@@ -30,18 +31,9 @@ public class Kaffehaus extends PApplet
     @Override
     public void setup()
     {
-        
 
     }
-    
-    public void parallelen()
-    { 
-      for(int i = 0; i < 10; i++) {
-          line(640,10+i*40,0,0);
-        }
 
-    }
-    
     /**
      * Die draw() Methode wird nach der setup() Methode aufgerufen
      * und führt den Code innerhalb ihres Blocks fortlaufend aus,
@@ -50,15 +42,31 @@ public class Kaffehaus extends PApplet
     @Override
     public void draw()
     {
-
+     parallelen();
+     zeichneQuadrate();
     }
-
+    
+    public void parallelen()
+    {
+        for(int i = 0; i < 10; i++) {
+         line(0,10+i*40,640,10+i*s);
+         
+        }   
+    
+    }
+     
+    public void zeichneQuadrate()
+    {
+    
+    
+    }
+    
     /**
      * Mit der main()-Methode wird das Programm gestartet.
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {Kaffehaus.class.getName() });
+        PApplet.main(new String[] {Kaffeehaus.class.getName() });
     }
 
 }
