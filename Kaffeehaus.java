@@ -31,7 +31,7 @@ public class Kaffeehaus extends PApplet
     @Override
     public void setup()
     {
-
+        background(255);
     }
 
     /**
@@ -43,9 +43,33 @@ public class Kaffeehaus extends PApplet
     public void draw()
     {
      parallelen();
-     zeichneQuadrate();
+     for(int i = 0; i < 9; i++) {
+        if (i<=3){
+            moduloplus(i);
+        }
+        else if(3 < i && i<=5){ 
+            modulominus(i);
+        }
+        else{
+            moduloplus(i);
+        }
+        
+        }
     }
+     public void moduloplus(int i){
     
+        int modulo = i % 3;
+         zeichneQuadrate(modulo * 10,i*40);
+    
+    
+    }
+     public void modulominus(int i){
+    
+        int modulo = -1*(i % 3);
+         zeichneQuadrate(modulo * 10+10,i*40);
+    
+    
+    }   
     public void parallelen()
     {
         for(int i = 0; i < 10; i++) {
@@ -55,9 +79,13 @@ public class Kaffeehaus extends PApplet
     
     }
      
-    public void zeichneQuadrate()
+    public void zeichneQuadrate(int shiftx,int shifty)
     {
-    
+        fill(0);
+        for(int i = 0; i < 10; i++) {
+         square(shiftx +10+i*s*2,shifty + 10,s);
+         
+        }  
     
     }
     
