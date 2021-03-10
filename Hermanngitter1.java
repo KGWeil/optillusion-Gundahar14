@@ -42,7 +42,7 @@ public class Hermanngitter1 extends PApplet
     
     public void quadrateRow(int shiftdown)
     {
-       
+       fill(255);
        for (int i = 0; i<=7;i++ )
         {
             
